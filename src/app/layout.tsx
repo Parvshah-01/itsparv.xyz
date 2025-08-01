@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/Footer';
 import ClientWrapper from '@/components/ClientWrapper';
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'Parv’s Portfolio',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+        <Analytics/>
         <ClientWrapper>
           <Header />
           <main>{children}</main>
