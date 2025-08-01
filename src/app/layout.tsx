@@ -6,7 +6,7 @@ import ClientWrapper from '@/components/ClientWrapper';
 
 export const metadata = {
   title: 'Parv’s Portfolio',
-  description: 'My personal site built with Next.js',
+  description: 'Parv’s Portfolio',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
