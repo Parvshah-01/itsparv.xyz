@@ -13,7 +13,7 @@ export default function HomePage() {
           <Link href="/about" className="inner-box intro-box box1">
             <img src="image.png" alt="Parv" className="profile-pic" />
             <div className="intro-text">
-              <h1 className="hey-title">Hey, I'm Parv 👋🏼</h1>
+              <h1 className="hey-title">Hey, I&apos;m Parv 👋🏼</h1>
               <div className="intro-subline">
                 <span className="label">Pursuing Computer Engineering</span>
                 <span className="intro-arrow-um-1">➜</span>

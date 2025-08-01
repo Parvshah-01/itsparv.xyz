@@ -68,7 +68,7 @@ export default function AboutPage() {
 
         <section className="learning-section" data-aos="fade-up" data-aos-delay="100">
           <h1 className='What-I_Am_Learning'>
-            <span className="heading-gradient-bar"></span>What I'm Learning
+            <span className="heading-gradient-bar"></span>What I&apos;m Learning
           </h1>
           <div className="About-me-image-container">
             <p className="About-me-description">

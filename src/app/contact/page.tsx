@@ -84,7 +84,7 @@ export default function ContactPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          I'd love to hear from you — whether it's a project, job, or just a hello!
+          I&apos;d love to hear from you — whether it&apos;s a project, job, or just a hello!
         </motion.p>
 
         <form onSubmit={handleSubmit} className="contact-form">
