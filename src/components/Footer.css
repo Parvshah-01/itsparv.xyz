@@ -1,0 +1,45 @@
+
+/* ====================================================================
+   📎 Footer
+==================================================================== */
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer .socials a {
+  color: #aaaaaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer .socials a:hover {
+  color: white;
+}
+
+.love-by-parv {
+  padding-top: 1rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.1rem !important;
+  font-size: small;
+}
+
+.socials a {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.socials a:focus {
+  outline: none;
+}

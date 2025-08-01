@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+
+
+
+
+/* ====================================================================
+   🧭 Navigation Bar
+==================================================================== */
+
+.navbar {
+  padding: 2.5rem 3rem;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  justify-self: center;
+}
+
+.nav-links a {
+  color: #dddddd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Contact Button - Desktop Only */
+.contact-btn {
+  justify-self: end;
+  opacity: 1;
+}
+
+.contact-btn a {
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  opacity: 1 !important;
+  height: 50px;
+  background: white;
+  color: #111111;
+  border-radius: 60px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s, background 0.2s;
+   transform: scale(1);
+}
+
+.contact-btn a:active {
+  transform: scale(1.03);
+  background: #ffffff;
+}
+
+/* Mobile hamburger menu icon */
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1101;
+  grid-column: 3;
+  justify-self: end;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/* ====================================================================
+   📱 Mobile Slide-Out Menu
+==================================================================== */
+.slide-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  height: 100vh;
+  width: 260px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  gap: 2rem;
+  transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
+  z-index: 20000;
+  opacity: 0;
+}
+
+.slide-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-align: start;
+  transition: background 0.2s, transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+  letter-spacing: 1px;
+}
+
+
+.slide-menu a:hover,
+.slide-menu a:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  transform: scale(1.2);
+}
+
+.slide-menu.open {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+
+/* ====================================================================
+   📱 Responsive: Mobile-Only Visibility
+==================================================================== */
+.nav-links,
+.contact-btn {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .contact-btn {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+

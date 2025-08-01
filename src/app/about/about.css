@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* ===== Global ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #212224;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ===== Typography ===== */
+.About-me-text {
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 1001;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.About-me-description {
+  color: #D9D5C9;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: justify;
+  max-width: clamp(400px, 90%, 800px);
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.What-I_Am_Learning {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding-top: 5rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* ===== ToolBox Section ===== */
+.my-tools-h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  padding-top: 5rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.My-ToolBox {
+  width: 90%;
+  max-width: 300px;
+  margin: 2rem auto 0;
+  background-color: #1E1E1E;
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  min-width: 280px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.My-ToolBox:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ToolBox-Container-1,
+.ToolBox-Container-2,
+.ToolBox-Container-3,
+.ToolBox-Container-4 {
+  width: calc(50% - 0.5rem);
+  background-color: #333639;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  transition: background 0.3s ease;
+}
+
+.ToolBox-Container-1:hover,
+.ToolBox-Container-2:hover,
+.ToolBox-Container-3:hover,
+.ToolBox-Container-4:hover {
+  background-color: #3f4347;
+}
+
+.ToolBox-Icon {
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.ToolBox-Icon:hover {
+  transform: scale(1.08);
+}
+
+/* ===== Interests ===== */
+.Interests-container {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.Interest-column ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Interest-column li {
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.Interest-column li:hover {
+  transform: translateX(4px);
+}
+
+/* ===== Gradient Bar ===== */
+.heading-gradient-bar {
+  width: 6px;
+  height: 24px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #A770EF, #CF8BF3, #eab39b, #FDB99B);
+  opacity: 1 !important;
+}
+
+/* ===== Profile Box ===== */
+.profile-box {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .profile-box-container {
+    display: block;
+  }
+
+  .about-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    gap: 3rem;
+  }
+
+  .about-main-content {
+    flex: 1;
+    max-width: 850px;
+  }
+
+  .profile-box {
+    position: sticky;
+    top: 2rem;
+    background: #333639;
+    border: 1.5px solid #3c3e42;
+    padding: 1.5rem;
+    border-radius: 14px;
+    max-width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-self: flex-start;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .profile-box:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .profile-pic {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-name {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .divider {
+    height: 2px;
+    background: white;
+    border-radius: 999px;
+    margin-top: 6px;
+  }
+
+  .profile-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #d1d5db;
+  }
+
+  .profile-row .icon {
+    font-size: 1rem;
+    color: #fdfeff;
+  }
+
+  .icon-svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* ===== Animation: fadeInUp ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 1200px) {
+  .My-ToolBox {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .ToolBox-Icon {
+    width: 50%;
+  }
+}
