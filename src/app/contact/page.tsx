@@ -6,6 +6,8 @@ import { Mail, MapPin, SendHorizonal } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
+
+
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [showAlert, setShowAlert] = useState(false);
@@ -131,16 +133,6 @@ export default function ContactPage() {
           </motion.button>
         </form>
 
-        <div className="contact-info">
-          <div className="info-row">
-            <Mail className="icon" />
-            parv@itsparv.xyz
-          </div>
-          <div className="info-row">
-            <MapPin className="icon" />
-            Gujarat, India
-          </div>
-        </div>
       </div>
     </motion.div>
   );
