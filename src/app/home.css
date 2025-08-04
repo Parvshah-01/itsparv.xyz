@@ -223,12 +223,11 @@
 
 }
 
-/* Custom bullet style */
 .bullet-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #FFB347; /* <-- Change this color later */
+  background-color: #FFB347; 
   display: inline-block;
 }
 
@@ -433,7 +432,7 @@ svg {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #FFB347; /* <-- Change this color later */
+    background-color: #FFB347;
     display: inline-block;
   }
 
@@ -442,7 +441,6 @@ svg {
   }
 
 
-/* Total horizontal gaps in a row with 3 items = 2 gaps (0.6rem each) = 1.2rem */
 
 .box1 {
   width: calc(50% - 0.6rem);
@@ -451,7 +449,7 @@ svg {
 
 .box2,
 .box3 {
-  width: calc(25% - 0.6rem); /* 2 gaps between 3 items */
+  width: calc(25% - 0.6rem);
   height: 230px;
 }
 
@@ -487,11 +485,6 @@ svg {
 
 }
 
-/* ============================================================
-   💎 Modern Hover Effects & Entry Animations (No Glass/Neo)
-=============================================================== */
-
-/* Boxes: Clean background, soft shadow, responsive padding */
 .inner-box,
 .intro-box,
 .about-box,

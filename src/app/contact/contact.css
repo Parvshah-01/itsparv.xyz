@@ -107,6 +107,10 @@ body {
   box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
 }
 
+.alert-toast-icon {
+  font-size: 1.2rem;
+}
+
 /* Icons */
 .icon {
   width: 18px;
@@ -138,16 +142,22 @@ body {
   top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background: #16a34a;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
+  background: #2c2c2e; /* Dark slate */
+  color: #e0e0e0;
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
   font-weight: 600;
   font-size: 1rem;
   z-index: 9999;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
   animation: fadeInOut 3s ease forwards;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
 }
+
 
 /* Fade in/out animation */
 @keyframes fadeInOut {
