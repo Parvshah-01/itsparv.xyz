@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { useState, useRef, useEffect } from 'react'
 import './Header.css'
 
+
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const slideMenuRef = useRef<HTMLDivElement>(null)
