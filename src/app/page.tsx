@@ -37,8 +37,8 @@ export default function HomePage() {
             <div className="learning-heading">CURRENTLY LEARNING</div>
             <ul className="learning-list">
               <li><span className="bullet-dot"></span><span className="bullet-text">Python</span></li>
-              <li><span className="bullet-dot"></span><span className="bullet-text">Automation</span></li>
-              <li><span className="bullet-dot"></span><span className="bullet-text">Cloud</span></li>
+              <li><span className="bullet-dot"></span><span className="bullet-text">Backend</span></li>
+              <li><span className="bullet-dot"></span><span className="bullet-text">AI</span></li>
             </ul>
           </div>
 
