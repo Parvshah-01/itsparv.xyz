@@ -7,8 +7,8 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
-  title: 'Parv’s Portfolio',
-  description: 'Parv’s Portfolio',
+  title: 'itsparv.xyz',
+  description: 'About Parv',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
