@@ -1,22 +1,21 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import './home.css'
+import Link from "next/link";
+import "./home.css";
 
 export default function HomePage() {
   return (
     <>
       <div className="main-content">
         <div className="outer-box">
-
           {/* Block 1: Intro */}
           <Link href="/about" className="inner-box intro-box box1">
             <img src="image.png" alt="Parv" className="profile-pic" />
             <div className="intro-text">
-              <h1 className="hey-title">Hey, I&apos;m Parv 👋🏼</h1>
+              <h1 className="hey-title">Hey, I&apos;m Parv 👋</h1>
               <div className="intro-subline">
                 <span className="label">Pursuing Computer Engineering</span>
-                <span className="intro-arrow-um-1">➜</span>
+                <span className="intro-arrow-um-1">→</span>
               </div>
             </div>
           </Link>
@@ -27,7 +26,7 @@ export default function HomePage() {
             <div className="about-main-text">LEARN MORE ABOUT ME</div>
             <div className="about-subline">
               <span className="label-text">About Me</span>
-              <span className="about-arrow-um">➜</span>
+              <span className="about-arrow-um">→</span>
             </div>
           </Link>
 
@@ -36,9 +35,18 @@ export default function HomePage() {
             <img src="/learning.svg" alt="Learning Icon" className="learning-icon" />
             <div className="learning-heading">CURRENTLY LEARNING</div>
             <ul className="learning-list">
-              <li><span className="bullet-dot"></span><span className="bullet-text">Python</span></li>
-              <li><span className="bullet-dot"></span><span className="bullet-text">Backend</span></li>
-              <li><span className="bullet-dot"></span><span className="bullet-text">AI</span></li>
+              <li>
+                <span className="bullet-dot"></span>
+                <span className="bullet-text">Python</span>
+              </li>
+              <li>
+                <span className="bullet-dot"></span>
+                <span className="bullet-text">Backend</span>
+              </li>
+              <li>
+                <span className="bullet-dot"></span>
+                <span className="bullet-text">AI</span>
+              </li>
             </ul>
           </div>
 
@@ -68,28 +76,12 @@ export default function HomePage() {
             <p className="contact-subline">Ideas, collabs, feedback — all welcome.</p>
             <div className="contact-mainline">
               <span className="label-text-something-i-dont-understand">Get in touch now</span>
-              <span className="contact-arrow-i-hate-this">➜</span>
+              <span className="contact-arrow-i-hate-this">→</span>
             </div>
           </Link>
-
-          {/* Block 7: API Collection
-          <a
-            href="https://github.com/Parvshah-01?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inner-box api-box box7"
-          >
-            <img src="/learning.svg" alt="Project Icon" className="api-icon" />
-            <div className="api-heading">Featured Project</div>
-            <div className="api-subline">
-              <span className="label-text-api">View projects</span>
-              <span className="api-arrow">➜</span>
-            </div>
-          </a> */}
-
-
         </div>
       </div>
     </>
   );
 }
+

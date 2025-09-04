@@ -2,6 +2,20 @@
   "name": "itsparv",
   "version": "0.1.0",
   "private": true,
+  "description": "Personal site of Parv Shah (itsparv.xyz), built with Next.js.",
+  "license": "MIT",
+  "author": "Parv Shah",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parvshah-01/itsparv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Parvshah-01/itsparv/issues"
+  },
+  "homepage": "https://itsparv.xyz",
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

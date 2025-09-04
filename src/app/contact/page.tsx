@@ -1,15 +1,13 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, MapPin, SendHorizonal } from 'lucide-react';
-import emailjs from '@emailjs/browser';
-import './contact.css';
-
-
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { SendHorizonal } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import "./contact.css";
 
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (
@@ -35,13 +33,13 @@ export default function ContactPage() {
 
       if (result.status === 200) {
         setShowAlert(true);
-        setForm({ name: '', email: '', message: '' });
+        setForm({ name: "", email: "", message: "" });
       } else {
-        alert('Failed to send message.');
+        alert("Failed to send message.");
       }
     } catch (error) {
-      console.error('EmailJS error:', error);
-      alert('Error sending message.');
+      console.error("EmailJS error:", error);
+      alert("Error sending message.");
     }
   };
 
@@ -137,3 +135,4 @@ export default function ContactPage() {
     </motion.div>
   );
 }
+

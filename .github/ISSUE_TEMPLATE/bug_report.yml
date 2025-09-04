@@ -1,0 +1,22 @@
+name: Bug report
+description: File a bug report
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      placeholder: What happened? What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1) Go to..., 2) Click..., 3) See error
+  - type: textarea
+    attributes:
+      label: Screenshots / logs
+  - type: input
+    attributes:
+      label: Environment
+      placeholder: Browser/OS/Node version
+
