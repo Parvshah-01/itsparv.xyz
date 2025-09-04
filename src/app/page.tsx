@@ -72,20 +72,20 @@ export default function HomePage() {
             </div>
           </Link>
 
-          {/* Block 7: API Collection */}
+          {/* Block 7: API Collection
           <a
-            href="https://www.postman.com/parv-shah01"
+            href="https://github.com/Parvshah-01?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="inner-box api-box box7"
           >
-            <img src="/api.svg" alt="API Icon" className="api-icon" />
-            <div className="api-heading">My API Collection</div>
+            <img src="/learning.svg" alt="Project Icon" className="api-icon" />
+            <div className="api-heading">Featured Project</div>
             <div className="api-subline">
-              <span className="label-text-api">Explore my APIs</span>
+              <span className="label-text-api">View projects</span>
               <span className="api-arrow">➜</span>
             </div>
-          </a>
+          </a> */}
 
 
         </div>

@@ -360,6 +360,14 @@
   opacity: 1;
 }
 
+/* Override for repurposed box7 (Featured Project) */
+.box7 .api-arrow { display: none; }
+.box7 .api-subline::after {
+  content: '->';
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 
 svg {
   fill: #fff;
